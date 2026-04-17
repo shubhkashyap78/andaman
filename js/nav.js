@@ -6,6 +6,24 @@ hamburger?.addEventListener('click', () => {
   hamburger.classList.toggle('active');
 });
 
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+  if (navMenu && hamburger && !navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+    navMenu.classList.remove('open');
+    hamburger.classList.remove('active');
+  }
+});
+
+// Close menu on nav link click (mobile)
+document.querySelectorAll('.nav-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    if (window.innerWidth <= 700) {
+      navMenu.classList.remove('open');
+      hamburger.classList.remove('active');
+    }
+  });
+});
+
 // Dropdown toggle on mobile
 document.querySelectorAll('.dropdown > .nav-link').forEach(btn => {
   btn.addEventListener('click', (e) => {
