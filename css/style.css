@@ -815,7 +815,7 @@ footer {
   padding: 60px 24px 30px;
 }
 
-.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; max-width: 1200px; margin: 0 auto 40px; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr; gap: 32px; max-width: 1200px; margin: 0 auto 40px; }
 
 .footer-brand .logo { color: #fff; margin-bottom: 14px; display: inline-flex; }
 .footer-brand p { font-size: 0.88rem; line-height: 1.7; color: rgba(255,255,255,0.6); }
@@ -874,7 +874,7 @@ footer {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .cards-grid { grid-template-columns: repeat(2, 1fr); }
-  .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+  .footer-grid { grid-template-columns: 1fr 1fr 1fr; gap: 24px; }
 }
 
 @media (max-width: 900px) {
